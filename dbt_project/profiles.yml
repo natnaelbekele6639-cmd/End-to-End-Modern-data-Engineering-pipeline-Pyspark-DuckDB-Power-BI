@@ -1,0 +1,7 @@
+global_connectivity:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/final/global_connectivity.duckdb
+      threads: 4

@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_internet_speeds
+    columns:
+      - name: quadkey
+        tests:
+          - not_null
+          - unique
+      - name: Country_Name
+        tests:
+          - not_null
+
+  - name: avg_speed_by_country
+    columns:
+      - name: Country_Name
+        tests:
+          - not_null

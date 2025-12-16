@@ -1,0 +1,12 @@
+name: global_connectivity
+version: "1.0"
+config-version: 2
+
+profile: global_connectivity
+
+models:
+  global_connectivity:
+    staging:
+      materialized: view
+    marts:
+      materialized: table
