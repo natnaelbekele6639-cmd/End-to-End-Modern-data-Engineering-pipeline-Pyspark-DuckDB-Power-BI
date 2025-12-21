@@ -96,18 +96,27 @@ main_flow.serve(name="daily-etl-deployment", cron="0 9 * * *")
 ETL_Process/
 │
 ├── data/
-│   ├── final/                  # DuckDB database & BI-ready CSV
-│   ├── staging_parquet/        # Intermediate Spark outputs
-│   └── hadoop_home/            # Windows Hadoop binaries
+│   ├── final/                  # Final DuckDB database and BI-ready CSV outputs
+│   ├── staging_parquet/        # Intermediate Spark outputs (Parquet format)
+│   └── hadoop_home/            # Hadoop winutils binaries (Windows support)
 │
 ├── orchestration/
-│   ├── advanced.py             # Main Prefect ETL flow
-│   └── create_csv.py           # Power BI export script
+│   ├── advanced_orchestration.py   # Main Prefect ETL workflow (Extract → Transform → Load)
+│   └── create_csv.py               # Script to export DuckDB tables for Power BI
 │
-├── dashboard/
-│   └── dashboard_screenshot.png
+├── dbt_project/
+│   ├── models/
+│   │   ├── marts/
+│   │   │   └── avg_speed_by_country.sql   # Final analytical model
+│   │   ├── staging/
+│   │   │   └── stg_internet_speeds.sql     # Cleaned staging model
+│   │   └── schema.yml                     # dbt tests & documentation
+│   │
+│   ├── dbt_project.yml
+│   └── profiles.yml
 │
 └── README.md
+
 ### 📊 Power BI Dashboard Preview
 ![photo_2025-12-16_02-08-40](https://github.com/user-attachments/assets/3e67d759-f0b8-40ae-868d-a88547488138)
 
