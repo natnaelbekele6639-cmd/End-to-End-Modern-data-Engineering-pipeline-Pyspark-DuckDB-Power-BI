@@ -105,15 +105,20 @@ The entire ETL workflow is orchestrated using **Prefect**, providing:
 | Elbetel Abedi   | DBU1501145 |  Data Engineer – Spark Transformations & Optimization              |
 | Genet Minda     | DBU1501217 | Documentation – Reporting & Repository Management    |
 
-**🚀 How to Run the Project**
-1️⃣ Install Dependencies
-   pip install pyspark duckdb prefect pandas requests
-2️⃣ Start the Orchestration Server
-   python orchestration/advanced_orchestration.py
-3️⃣ Trigger the ETL Pipeline
-    prefect deployment run "Advanced Global Pipeline/daily-etl-deployment"
-4️⃣ Generate Power BI Dataset
-    python orchestration/create_csv.py
+## 🚀 How to Run the Project
+
+1️⃣ Install Dependencies  
+pip install pyspark duckdb prefect pandas requests  
+
+2️⃣ Start the Orchestration Server  
+python orchestration/advanced_orchestration.py  
+
+3️⃣ Trigger the ETL Pipeline  
+prefect deployment run "Advanced Global Pipeline/daily-etl-deployment"  
+
+4️⃣ Generate Power BI Dataset  
+python orchestration/create_csv.py
+
 ## 📈 Key Metrics & Insights
     Global internet performance distribution by country
 
