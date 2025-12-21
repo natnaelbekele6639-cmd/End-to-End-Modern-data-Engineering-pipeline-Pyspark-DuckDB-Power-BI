@@ -34,16 +34,12 @@ The ETL pipeline integrates three distinct datasets:
 ---
 
 ## 🏗 Architecture Overview
-The pipeline follows a modern **lakehouse-style architecture**:
-
-- **Extract:** Parallel ingestion from cloud and web sources
-- **Transform:** Distributed processing and enrichment using PySpark
-- **Load:** Columnar storage and analytical querying using DuckDB
-- **Visualize:** Interactive dashboard built in Microsoft Power BI
 
 ---
 
-## 🛠 Technologies Used
+## 🛠 ![orches](https://github.com/user-attachments/assets/0b7f18c4-1150-4c2c-908e-b9a06c063d48)
+
+Technologies Used
 
 | Category | Tool |
 |--------|------|
@@ -113,7 +109,7 @@ The entire ETL workflow is orchestrated using **Prefect**, providing:
 1️⃣ Install Dependencies
    pip install pyspark duckdb prefect pandas requests
 2️⃣ Start the Orchestration Server
-   python orchestration/advanced.py
+   python orchestration/advanced_orchestration.py
 3️⃣ Trigger the ETL Pipeline
     prefect deployment run "Advanced Global Pipeline/daily-etl-deployment"
 4️⃣ Generate Power BI Dataset
