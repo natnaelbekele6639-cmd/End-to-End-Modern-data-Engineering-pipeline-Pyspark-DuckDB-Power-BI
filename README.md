@@ -91,29 +91,8 @@ The entire ETL workflow is orchestrated using **Prefect**, providing:
 
 
 ### 📁 Repository Structure
-ETL_Process/
-│
-├── data/
-│   ├── final/                  # Final DuckDB database and BI-ready CSV outputs
-│   ├── staging_parquet/        # Intermediate Spark outputs (Parquet format)
-│   └── hadoop_home/            # Hadoop winutils binaries (Windows support)
-│
-├── orchestration/
-│   ├── advanced_orchestration.py   # Main Prefect ETL workflow (Extract → Transform → Load)
-│   └── create_csv.py               # Script to export DuckDB tables for Power BI
-│
-├── dbt_project/
-│   ├── models/
-│   │   ├── marts/
-│   │   │   └── avg_speed_by_country.sql   # Final analytical model
-│   │   ├── staging/
-│   │   │   └── stg_internet_speeds.sql     # Cleaned staging model
-│   │   └── schema.yml                     # dbt tests & documentation
-│   │
-│   ├── dbt_project.yml
-│   └── profiles.yml
-│
-└── README.md
+<img width="502" height="385" alt="image" src="https://github.com/user-attachments/assets/81773883-84b4-4b06-a4a1-985e86be0c35" />
+
 
 ### 📊 Power BI Dashboard Preview
 ![photo_2025-12-16_02-08-40](https://github.com/user-attachments/assets/3e67d759-f0b8-40ae-868d-a88547488138)
