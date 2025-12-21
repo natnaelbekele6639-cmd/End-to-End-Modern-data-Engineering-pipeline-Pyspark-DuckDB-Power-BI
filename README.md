@@ -89,10 +89,8 @@ The entire ETL workflow is orchestrated using **Prefect**, providing:
 - **24-hour Task Caching**
 - **Daily Scheduled Execution (Cron-based)**
 
-**Deployment Command:**
 
-main_flow.serve(name="daily-etl-deployment", cron="0 9 * * *")
-**📁 Repository Structure**
+### 📁 Repository Structure
 ETL_Process/
 │
 ├── data/
