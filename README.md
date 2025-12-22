@@ -109,16 +109,27 @@ The entire ETL workflow is orchestrated using **Prefect**, providing:
 
 ## 🚀 How to Run the Project
 
-1️⃣ Install Dependencies  
+1️⃣ Set Up Environment
+Install Java 17 , Spark 4.1, and ensure JAVA_HOME, SPARK_HOME, and
+ PATH are correctly configured (Windows users may add winutils.exe to C:\hadoop\bin).
+
+2️⃣ Install Python Dependencies
+
 pip install pyspark duckdb prefect pandas requests  
 
-2️⃣ Start the Orchestration Server  
-python orchestration/advanced_orchestration.py  
 
-3️⃣ Trigger the ETL Pipeline  
-prefect deployment run "Advanced Global Pipeline/daily-etl-deployment"  
+3️⃣ Start the Orchestration Server
 
-4️⃣ Generate Power BI Dataset  
+python orchestration/advanced_orchestration.py
+
+
+4️⃣ Trigger the ETL Pipeline
+
+prefect deployment run "Advanced Global Pipeline/daily-etl-deployment"
+
+
+5️⃣ Generate Power BI Dataset
+
 python orchestration/create_csv.py
 
 ## 📈 Key Metrics & Insights
