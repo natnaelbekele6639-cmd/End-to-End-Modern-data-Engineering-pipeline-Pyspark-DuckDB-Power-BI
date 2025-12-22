@@ -159,7 +159,7 @@ def transform_data(ookla_path, geo_path, pop_path):
     finally:
         spark.stop()
 
-# --- TASK 3: LOAD ---
+# --- TASK 3: LOAD TO DUCKDB---
 @task(name="Load to DuckDB")
 def load_to_duckdb():
     print("--- LOADING INTO DUCKDB ---")
