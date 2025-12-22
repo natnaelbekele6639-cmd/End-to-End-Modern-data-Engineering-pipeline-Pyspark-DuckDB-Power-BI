@@ -1,4 +1,5 @@
 # 🌍 Global Internet Connectivity ETL Pipeline
+# Big Data Project
 
 ## 📌 Project Overview
 This project designs and implements a scalable, resilient **ETL (Extract, Transform, Load) data pipeline** that processes large-scale global internet performance data and prepares it for advanced analytics and business intelligence reporting.
