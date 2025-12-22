@@ -110,7 +110,7 @@ The entire ETL workflow is orchestrated using **Prefect**, providing:
 ## 🚀 How to Run the Project
 
 1️⃣ Set Up Environment
-Install Java 17 , Spark 4.1, and ensure JAVA_HOME, SPARK_HOME, and
+Install Java 17 , Spark 4.0.1, and ensure JAVA_HOME, SPARK_HOME, and
  PATH are correctly configured (Windows users may add winutils.exe to C:\hadoop\bin).
 
 2️⃣ Install Python Dependencies
