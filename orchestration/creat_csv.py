@@ -1,3 +1,4 @@
+# importing neccessary libraries
 import duckdb
 import os
 
@@ -6,7 +7,7 @@ BASE_DIR = os.getcwd()
 DB_PATH = os.path.join(BASE_DIR, "data", "final", "global_connectivity.duckdb")
 CSV_PATH = os.path.join(BASE_DIR, "data", "final", "dashboard_data.csv")
 
-# Ensure the database exists
+# Ensure the database exists or not
 if not os.path.exists(DB_PATH):
     print(f"❌ Error: Database not found at {DB_PATH}")
     exit(1)
@@ -30,7 +31,7 @@ else:
     print(f"Available tables: {existing_tables}")
     exit(1)
 
-# 3. Export to CSV
+# 3. Export to CSV file format to use dashboard integrity
 print(f"💾 Exporting table '{table_name}' to CSV...")
 con.execute(f"COPY {table_name} TO '{CSV_PATH}' (HEADER, DELIMITER ',')")
 
