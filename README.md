@@ -56,6 +56,7 @@ Technologies Used
 ## 🔄 ETL Pipeline Description
 
 ### 1️⃣ Extract
+- **download and read the data sets:**
 - **Concurrency:** Uses `prefect.submit()` to download Parquet, GeoJSON, and CSV files in parallel
 - **Smart Caching:** Hash-based checks prevent redundant downloads if data is unchanged
 
