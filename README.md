@@ -101,10 +101,10 @@ The entire ETL workflow is orchestrated using **Prefect**, providing:
 | Natnael Bekele  | DBU1501407 | Project Lead – Architecture & Pipeline Strategy      |
 | Bereket Getaw   | DBU1501044 | BI Developer – Power BI Dashboard Design|
 | Hafiz Husen     | DBU1501241 | Orchestration Lead – Prefect Deployment & Scheduling |
-| Rediet Esubalew | DBU1501704 | dbt_project  |
+| Rediet Esubalew | DBU1501704 |dbt_project –Development and configuration of dbt models|
 | Dawit Alemu     | DBU1501117 | Database Admin – DuckDB Integration & Validation     |
 | Yiferu Mekonen  | DBU1501562 | Data Quality – Validation & Performance Grading      |
-| Elbetel Abedi   | DBU1501145 |  Data Engineer – Spark Transformations & Optimization              |
+| Elbetel Abedi   | DBU1501145 |  Data Engineer – Spark Transformations & Optimization|
 | Genet Minda     | DBU1501217 | Documentation – Reporting & Repository Management    |
 
 ## 🚀 How to Run the Project
